@@ -6,9 +6,11 @@
 .main {
   display: flex;
   height: 100vh;
+  padding-bottom: 74px;
 }
 
 .rightBackground {
+  position: relative;
   width: 100%;
   height: 100%;
   background-image: url(../assets/leftBackground.svg);
@@ -18,14 +20,13 @@
 }
 
 .leftBar {
-  width: 100%;
+  width: 70%;
   height: 100%;
 
-  background: var(--gray-50);
   display: flex;
   flex-direction: column;
 
-  padding: 2.5rem 13rem 13.0625rem 7rem;
+  margin: 2.5rem 13rem 13.0625rem 7rem;
 }
 
 .logo {
@@ -194,17 +195,29 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 1450px) {
+  .leftBar {
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+  }
+  
+  .logo {
+    margin-bottom: 2rem;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .rightBackground {
     display: none;
   }
+
   .leftBar {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    padding: 0;
+    margin: 0;
     margin-top: 0.625rem;
   }
 }

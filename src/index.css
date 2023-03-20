@@ -14,3 +14,8 @@
   --purple: #7c3aed;
   --light-purple: #9f67ff;
 }
+
+body {
+  background: var(--gray-50);
+  /* overflow: auto; */
+}
