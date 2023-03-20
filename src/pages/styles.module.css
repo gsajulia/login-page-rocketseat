@@ -93,12 +93,44 @@
   outline: 0.125rem solid var(--purple);
 }
 
+.email span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  
+  color: #ED3A5A;
+}
+
+.passwordContainer {
+  border: 0.0625rem solid var(--gray-200);
+  border-radius: 0.25rem;
+  background: var(--white);
+  display: flex;
+  justify-content: space-between;
+}
+
+.passwordContainer img {
+  cursor: pointer;
+  padding: 0 10px 0 10px;
+}
+
+.passwordContainer:hover {
+  outline: 0.125rem solid var(--purple);
+}
+
+
 .password {
   max-width: 24rem;
   display: flex;
   flex-direction: column;
 
   margin-bottom: 2rem;
+}
+
+.invalidInput input:invalid {
+  border-color: var(--error);
+  outline: none !important;
 }
 
 .labelPassword {
@@ -134,13 +166,12 @@
   padding: 1rem 0.75rem;
 
   background: var(--white);
-
-  border: 0.0625rem solid var(--gray-200);
-  border-radius: 0.25rem;
+  width: 100%;
+  border: none;
 }
 
-.password input:hover {
-  outline: 0.125rem solid var(--purple);
+.password input:focus {
+  outline: none;
 }
 
 .buttonEnter {
