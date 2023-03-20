@@ -14,7 +14,7 @@ Criação de uma página de Login é o #11 desafio <a href="https://boracodar.de
 <br>
 
 <p align="center" id="-layout">
-  <img alt="climate project gif" src="./src/assets/weatherDashboard.gif" width="100%">
+  <img alt="login gif" src="./src/assets/login.gif" width="100%">
 </p>
 
 ## 🚀 Tecnologias
