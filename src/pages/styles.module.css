@@ -128,7 +128,7 @@
   margin-bottom: 2rem;
 }
 
-.invalidInput input:invalid {
+.invalidInput input:focus:invalid {
   border-color: var(--error);
   outline: none !important;
 }
